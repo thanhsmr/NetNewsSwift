@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="TrendingNewsTableViewCell" customModule="NetNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-gO-55V">
+                        <rect key="frame" x="10" y="0.0" width="295" height="56.5"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gti-t3-ZUh">
+                                <rect key="frame" x="10" y="15" width="22" height="22"/>
+                                <color key="backgroundColor" red="0.36862745098039218" green="0.28235294117647058" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="8q0-Rk-PZf"/>
+                                    <constraint firstAttribute="width" secondItem="Gti-t3-ZUh" secondAttribute="height" multiplier="1:1" id="gwR-cr-eJh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label sf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-fV-0Jt">
+                                <rect key="frame" x="42" y="5" width="243" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Wxc-A0-Z2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y02-7C-XNm">
+                                <rect key="frame" x="10" y="5" width="275" height="46.5"/>
+                                <connections>
+                                    <action selector="touchArticle:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NV3-L5-MMM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y02-7C-XNm" secondAttribute="trailing" constant="10" id="1M2-4e-gaQ"/>
+                            <constraint firstItem="Gti-t3-ZUh" firstAttribute="leading" secondItem="E3c-gO-55V" secondAttribute="leading" constant="10" id="3sF-Bx-FMZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gAc-fV-0Jt" secondAttribute="trailing" constant="10" id="67f-QI-VEh"/>
+                            <constraint firstItem="gAc-fV-0Jt" firstAttribute="top" secondItem="E3c-gO-55V" secondAttribute="top" constant="5" id="OeI-0d-PX3"/>
+                            <constraint firstItem="Y02-7C-XNm" firstAttribute="leading" secondItem="Gti-t3-ZUh" secondAttribute="leading" id="Oun-GP-0Hq"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gAc-fV-0Jt" secondAttribute="bottom" constant="5" id="eRC-Jr-L3O"/>
+                            <constraint firstItem="gAc-fV-0Jt" firstAttribute="leading" secondItem="Gti-t3-ZUh" secondAttribute="trailing" constant="10" id="ikp-mr-jSO"/>
+                            <constraint firstAttribute="bottom" secondItem="Y02-7C-XNm" secondAttribute="bottom" constant="5" id="pWs-XQ-Nma"/>
+                            <constraint firstItem="Y02-7C-XNm" firstAttribute="top" secondItem="E3c-gO-55V" secondAttribute="top" constant="5" id="qGo-kd-PJ9"/>
+                            <constraint firstItem="Gti-t3-ZUh" firstAttribute="centerY" secondItem="gAc-fV-0Jt" secondAttribute="centerY" id="zwf-0X-x7P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="E3c-gO-55V" secondAttribute="bottom" id="61m-Sf-EkV"/>
+                    <constraint firstItem="E3c-gO-55V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="alS-zl-QBy"/>
+                    <constraint firstItem="E3c-gO-55V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iNq-Wz-Cau"/>
+                    <constraint firstAttribute="trailing" secondItem="E3c-gO-55V" secondAttribute="trailing" constant="10" id="wTu-ym-zd3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lbIndex" destination="Gti-t3-ZUh" id="uK1-q5-dah"/>
+                <outlet property="lbTitle" destination="gAc-fV-0Jt" id="v7a-U9-F6c"/>
+                <outlet property="viewMain" destination="E3c-gO-55V" id="eXX-fr-F4o"/>
+            </connections>
+            <point key="canvasLocation" x="-781" y="112"/>
+        </tableViewCell>
+    </objects>
+</document>

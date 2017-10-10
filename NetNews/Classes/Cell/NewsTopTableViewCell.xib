@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="399" id="Io4-fe-tXa" customClass="NewsTopTableViewCell" customModule="NetNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="399"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Io4-fe-tXa" id="fez-f3-WcQ">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="399"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rp3-gr-JBq">
+                        <rect key="frame" x="10" y="10" width="449" height="383.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xTX-LC-VTe">
+                                <rect key="frame" x="10" y="10" width="429" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xTX-LC-VTe" secondAttribute="height" multiplier="16/9" id="kUe-Zx-fWH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyc-Ka-47e" customClass="NewsTitleLabel" customModule="NetNews" customModuleProvider="target">
+                                <rect key="frame" x="10" y="261" width="429" height="112.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sES-Xd-Pmz">
+                                <rect key="frame" x="0.0" y="0.0" width="449" height="383.5"/>
+                                <connections>
+                                    <action selector="articleTouch:" destination="Io4-fe-tXa" eventType="touchUpInside" id="iup-6j-zFK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sES-Xd-Pmz" secondAttribute="bottom" id="2qx-ty-qkk"/>
+                            <constraint firstAttribute="trailing" secondItem="sES-Xd-Pmz" secondAttribute="trailing" id="5Yo-jR-1Eh"/>
+                            <constraint firstItem="sES-Xd-Pmz" firstAttribute="leading" secondItem="rp3-gr-JBq" secondAttribute="leading" id="7JW-hk-ZU7"/>
+                            <constraint firstAttribute="bottom" secondItem="Dyc-Ka-47e" secondAttribute="bottom" constant="10" id="8bO-bt-b5J"/>
+                            <constraint firstAttribute="trailing" secondItem="xTX-LC-VTe" secondAttribute="trailing" constant="10" id="92b-J1-VD5"/>
+                            <constraint firstItem="xTX-LC-VTe" firstAttribute="top" secondItem="rp3-gr-JBq" secondAttribute="top" constant="10" id="9Hl-6R-psN"/>
+                            <constraint firstItem="xTX-LC-VTe" firstAttribute="leading" secondItem="rp3-gr-JBq" secondAttribute="leading" constant="10" id="CUF-Zn-UQY"/>
+                            <constraint firstItem="sES-Xd-Pmz" firstAttribute="top" secondItem="rp3-gr-JBq" secondAttribute="top" id="End-aj-7GG"/>
+                            <constraint firstItem="Dyc-Ka-47e" firstAttribute="leading" secondItem="rp3-gr-JBq" secondAttribute="leading" constant="10" id="d40-g4-w7H"/>
+                            <constraint firstItem="Dyc-Ka-47e" firstAttribute="top" secondItem="xTX-LC-VTe" secondAttribute="bottom" constant="10" id="fDd-5Y-IQw"/>
+                            <constraint firstAttribute="trailing" secondItem="Dyc-Ka-47e" secondAttribute="trailing" constant="10" id="uD0-Qn-7kw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rp3-gr-JBq" secondAttribute="bottom" constant="5" id="RT0-SL-JSh"/>
+                    <constraint firstItem="rp3-gr-JBq" firstAttribute="leading" secondItem="fez-f3-WcQ" secondAttribute="leading" constant="10" id="Y7z-IH-NsP"/>
+                    <constraint firstItem="rp3-gr-JBq" firstAttribute="top" secondItem="fez-f3-WcQ" secondAttribute="top" constant="10" id="a2P-0K-3Dn"/>
+                    <constraint firstAttribute="trailing" secondItem="rp3-gr-JBq" secondAttribute="trailing" constant="10" id="f3G-Md-3Ml"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageMain" destination="xTX-LC-VTe" id="Fkx-Ph-ah5"/>
+                <outlet property="lbTitle" destination="Dyc-Ka-47e" id="S8a-wF-Ird"/>
+                <outlet property="mainView" destination="rp3-gr-JBq" id="fPq-dQ-84X"/>
+            </connections>
+            <point key="canvasLocation" x="-517" y="26"/>
+        </tableViewCell>
+    </objects>
+</document>

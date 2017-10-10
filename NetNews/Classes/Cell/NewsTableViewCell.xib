@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="279" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="NetNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="279"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-Og-kKF">
+                        <rect key="frame" x="10" y="5" width="357" height="268.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-6Z-qHb">
+                                <rect key="frame" x="197" y="10" width="150" height="84.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TIM-6Z-qHb" secondAttribute="height" multiplier="16/9" id="7Yu-L1-TWM"/>
+                                    <constraint firstAttribute="width" constant="150" id="7v6-rv-dKz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK6-gu-LzT" customClass="NewsTitleLabel" customModule="NetNews" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="177" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSo-hu-VIk" customClass="NewspaperNameLabel" customModule="NetNews" customModuleProvider="target">
+                                <rect key="frame" x="10" y="35.5" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4O1-2X-vCh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W66-YO-0Al" customClass="NewsSubTitleLabel" customModule="NetNews" customModuleProvider="target">
+                                <rect key="frame" x="10" y="203" width="337" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iO-bQ-BgG">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="268.5"/>
+                                <connections>
+                                    <action selector="articleTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eiu-Zn-8Ae"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-bI-2Gi">
+                                <rect key="frame" x="10" y="233.5" width="337" height="35"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbc-bd-ib8" customClass="ListenButtonView" customModule="NetNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="l5M-PI-VZ2"/>
+                                            <constraint firstAttribute="width" constant="100" id="zdE-cP-J6g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Nbc-bd-ib8" firstAttribute="leading" secondItem="bIX-bI-2Gi" secondAttribute="leading" id="OTY-I7-Vhm"/>
+                                    <constraint firstAttribute="height" constant="35" id="RuV-Gy-NdN"/>
+                                    <constraint firstItem="Nbc-bd-ib8" firstAttribute="top" secondItem="bIX-bI-2Gi" secondAttribute="top" id="X8T-Fo-Rey"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6iO-bQ-BgG" firstAttribute="height" secondItem="kGc-Og-kKF" secondAttribute="height" id="2BN-xU-t4y"/>
+                            <constraint firstItem="6iO-bQ-BgG" firstAttribute="centerY" secondItem="kGc-Og-kKF" secondAttribute="centerY" id="5iY-3a-eMZ"/>
+                            <constraint firstAttribute="bottom" secondItem="bIX-bI-2Gi" secondAttribute="bottom" id="8xJ-vI-hKN"/>
+                            <constraint firstItem="oK6-gu-LzT" firstAttribute="top" secondItem="kGc-Og-kKF" secondAttribute="top" constant="10" id="ECU-Ni-rwt"/>
+                            <constraint firstItem="bIX-bI-2Gi" firstAttribute="leading" secondItem="kGc-Og-kKF" secondAttribute="leading" constant="10" id="NXW-pz-80n"/>
+                            <constraint firstAttribute="trailing" secondItem="W66-YO-0Al" secondAttribute="trailing" constant="10" id="PFB-1w-lAC"/>
+                            <constraint firstItem="W66-YO-0Al" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TIM-6Z-qHb" secondAttribute="bottom" constant="10" id="PQH-4b-EIh"/>
+                            <constraint firstItem="TIM-6Z-qHb" firstAttribute="top" secondItem="kGc-Og-kKF" secondAttribute="top" constant="10" id="Ui3-tf-h1Z"/>
+                            <constraint firstItem="bIX-bI-2Gi" firstAttribute="top" secondItem="W66-YO-0Al" secondAttribute="bottom" constant="10" id="WMf-Wy-nwF"/>
+                            <constraint firstItem="W66-YO-0Al" firstAttribute="leading" secondItem="kGc-Og-kKF" secondAttribute="leading" constant="10" id="XHs-vx-nKV"/>
+                            <constraint firstItem="6iO-bQ-BgG" firstAttribute="width" secondItem="kGc-Og-kKF" secondAttribute="width" id="XS5-z1-ZBI"/>
+                            <constraint firstItem="6iO-bQ-BgG" firstAttribute="centerX" secondItem="kGc-Og-kKF" secondAttribute="centerX" id="Xfx-28-JVr"/>
+                            <constraint firstItem="uSo-hu-VIk" firstAttribute="leading" secondItem="kGc-Og-kKF" secondAttribute="leading" constant="10" id="euh-kz-wee"/>
+                            <constraint firstItem="TIM-6Z-qHb" firstAttribute="leading" secondItem="oK6-gu-LzT" secondAttribute="trailing" constant="10" id="fWv-Rd-qgc"/>
+                            <constraint firstItem="oK6-gu-LzT" firstAttribute="leading" secondItem="kGc-Og-kKF" secondAttribute="leading" constant="10" id="ieA-UZ-PbP"/>
+                            <constraint firstItem="uSo-hu-VIk" firstAttribute="top" secondItem="oK6-gu-LzT" secondAttribute="bottom" constant="5" id="kya-yz-lhV"/>
+                            <constraint firstAttribute="trailing" secondItem="bIX-bI-2Gi" secondAttribute="trailing" constant="10" id="m9B-y5-dqY"/>
+                            <constraint firstAttribute="trailing" secondItem="TIM-6Z-qHb" secondAttribute="trailing" constant="10" id="qJ8-ML-IxO"/>
+                            <constraint firstItem="W66-YO-0Al" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uSo-hu-VIk" secondAttribute="bottom" constant="10" id="tt5-QN-dNV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kGc-Og-kKF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nDy-Fq-Od8"/>
+                    <constraint firstItem="kGc-Og-kKF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="s1m-M3-v8L"/>
+                    <constraint firstAttribute="trailing" secondItem="kGc-Og-kKF" secondAttribute="trailing" constant="10" id="v32-yA-qgQ"/>
+                    <constraint firstAttribute="bottom" secondItem="kGc-Og-kKF" secondAttribute="bottom" constant="5" id="vkl-JZ-iui"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnListenHeight" destination="RuV-Gy-NdN" id="Up3-fI-4Zo"/>
+                <outlet property="imageMain" destination="TIM-6Z-qHb" id="lld-Ij-AlW"/>
+                <outlet property="lbNewspaperName" destination="uSo-hu-VIk" id="1h8-KO-TQk"/>
+                <outlet property="lbTitle" destination="oK6-gu-LzT" id="Nc6-jx-Jbx"/>
+                <outlet property="lbTitleSub" destination="W66-YO-0Al" id="E5b-3A-Q1v"/>
+                <outlet property="listenButtonView" destination="Nbc-bd-ib8" id="ool-ds-yDB"/>
+                <outlet property="mainView" destination="kGc-Og-kKF" id="eaM-9A-Rfz"/>
+                <outlet property="parentListenButtonView" destination="bIX-bI-2Gi" id="nYl-wj-OVq"/>
+            </connections>
+            <point key="canvasLocation" x="-591" y="-152"/>
+        </tableViewCell>
+    </objects>
+</document>

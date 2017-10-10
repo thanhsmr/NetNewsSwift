@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BeautifullPeopleCollectionViewCell" customModule="NetNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="335"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="335"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Phq-Ua-0qX">
+                        <rect key="frame" x="0.0" y="0.0" width="217" height="335"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hn-vx-WlD" customClass="GradientView" customModule="NetNews" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="314" width="217" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbX-Wy-3KJ" customClass="BeutifullPeopleTitleLabel" customModule="NetNews" customModuleProvider="target">
+                        <rect key="frame" x="5" y="314" width="207" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WR-Lf-JYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="217" height="335"/>
+                        <connections>
+                            <action selector="touchArticle:" destination="gTV-IL-0wX" eventType="touchUpInside" id="1E7-Zo-f3Y"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Phq-Ua-0qX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4PJ-OU-1xr"/>
+                <constraint firstItem="AbX-Wy-3KJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="65K-rG-iuA"/>
+                <constraint firstAttribute="trailing" secondItem="AbX-Wy-3KJ" secondAttribute="trailing" constant="5" id="7dh-sI-xbz"/>
+                <constraint firstAttribute="bottom" secondItem="Phq-Ua-0qX" secondAttribute="bottom" id="F1b-L7-oOd"/>
+                <constraint firstItem="2WR-Lf-JYZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jbm-PC-rTu"/>
+                <constraint firstAttribute="bottom" secondItem="2WR-Lf-JYZ" secondAttribute="bottom" id="KNI-tl-3Lp"/>
+                <constraint firstAttribute="trailing" secondItem="Phq-Ua-0qX" secondAttribute="trailing" id="LMs-I3-koh"/>
+                <constraint firstItem="Phq-Ua-0qX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tes-AA-7Cx"/>
+                <constraint firstItem="2WR-Lf-JYZ" firstAttribute="top" secondItem="Phq-Ua-0qX" secondAttribute="top" id="WEZ-Ky-ZiC"/>
+                <constraint firstItem="9Hn-vx-WlD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eqF-4U-xP2"/>
+                <constraint firstAttribute="bottom" secondItem="9Hn-vx-WlD" secondAttribute="bottom" id="fiK-uk-s1P"/>
+                <constraint firstItem="9Hn-vx-WlD" firstAttribute="top" secondItem="AbX-Wy-3KJ" secondAttribute="top" id="j0l-Az-grE"/>
+                <constraint firstAttribute="trailing" secondItem="2WR-Lf-JYZ" secondAttribute="trailing" id="odk-CS-EQj"/>
+                <constraint firstAttribute="bottom" secondItem="AbX-Wy-3KJ" secondAttribute="bottom" id="uoF-8t-IeS"/>
+                <constraint firstAttribute="trailing" secondItem="9Hn-vx-WlD" secondAttribute="trailing" id="zje-Te-TWT"/>
+            </constraints>
+            <size key="customSize" width="217" height="335"/>
+            <connections>
+                <outlet property="imageMain" destination="Phq-Ua-0qX" id="WyV-TE-z7U"/>
+                <outlet property="lbTitle" destination="AbX-Wy-3KJ" id="CZe-Je-oQD"/>
+            </connections>
+            <point key="canvasLocation" x="-940" y="16"/>
+        </collectionViewCell>
+    </objects>
+</document>
